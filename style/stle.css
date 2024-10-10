@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body,.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.table td{
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.table td.red{
+    background-color: red;
+}
+.table td.green{
+    background-color: green;
+}
+.table td.animate{
+    animation: bubble 0.2s ease-in-out normal;
+}
+.row-table__text{
+    width: 36.5%;
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-one{
+    font-size: 24px;
+    color: red;
+    margin: 4px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+.text-two{
+    font-size: 24px;
+    color: green;
+    margin: 8px;
+    border-radius: 3px;
+    border: 2px solid green;
+}
+.Time{
+    font-size: 24px;
+    color: #000;
+    border-radius: 1px;
+    border: 1px solid #000;
+}
+.Time-secund{
+    font-size: 24px;
+    color: #000;
+    border-radius: 1px;
+    border: 1px solid #000;
+}
+
+@keyframes bubble {
+     0% {
+      transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
